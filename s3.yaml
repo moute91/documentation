@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+       - name: create an S3 bucket
+         s3_bucket:
+                 name: temou
+                 state: present
+                 #    aws_access_key: AKIAXP3NNGCCJKW4VDSF
+                 #    aws_secret_key: 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
+
